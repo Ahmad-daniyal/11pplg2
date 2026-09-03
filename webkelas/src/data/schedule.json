@@ -1,0 +1,522 @@
+[
+  {
+    "id": 1,
+    "day": "Senin",
+    "time": "06:30–07:15",
+    "subject": "",
+    "teacher": "",
+    "type": "free"
+  },
+  {
+    "id": 2,
+    "day": "Senin",
+    "time": "07:15–08:00",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 3,
+    "day": "Senin",
+    "time": "08:00–08:45",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 4,
+    "day": "Senin",
+    "time": "08:45–09:30",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 5,
+    "day": "Senin",
+    "time": "09:30–09:50",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 6,
+    "day": "Senin",
+    "time": "09:50–10:35",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 7,
+    "day": "Senin",
+    "time": "10:35–11:20",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 8,
+    "day": "Senin",
+    "time": "11:20–12:05",
+    "subject": "JPG",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 9,
+    "day": "Senin",
+    "time": "12:05–12:25",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 10,
+    "day": "Senin",
+    "time": "12:25–13:05",
+    "subject": "JPG",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 11,
+    "day": "Senin",
+    "time": "13:05–13:45",
+    "subject": "PAI",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 12,
+    "day": "Senin",
+    "time": "13:45–14:25",
+    "subject": "PAI",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 13,
+    "day": "Senin",
+    "time": "14:25–15:05",
+    "subject": "BK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 14,
+    "day": "Selasa",
+    "time": "06:30–07:15",
+    "subject": "PKN",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 15,
+    "day": "Selasa",
+    "time": "07:15–08:00",
+    "subject": "PKN",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 16,
+    "day": "Selasa",
+    "time": "08:00–08:45",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 17,
+    "day": "Selasa",
+    "time": "08:45–09:30",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 18,
+    "day": "Selasa",
+    "time": "09:30–09:50",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 19,
+    "day": "Selasa",
+    "time": "09:50–10:35",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 20,
+    "day": "Selasa",
+    "time": "10:35–11:20",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 21,
+    "day": "Selasa",
+    "time": "11:20–12:05",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 22,
+    "day": "Selasa",
+    "time": "12:05–12:25",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 23,
+    "day": "Selasa",
+    "time": "12:25–13:05",
+    "subject": "DKV",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 24,
+    "day": "Selasa",
+    "time": "13:05–13:45",
+    "subject": "DKV",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 25,
+    "day": "Selasa",
+    "time": "13:45–14:25",
+    "subject": "PJO",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 26,
+    "day": "Selasa",
+    "time": "14:25–15:05",
+    "subject": "PJO",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 27,
+    "day": "Rabu",
+    "time": "06:30–07:15",
+    "subject": "MTK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 28,
+    "day": "Rabu",
+    "time": "07:15–08:00",
+    "subject": "MTK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 29,
+    "day": "Rabu",
+    "time": "08:00–08:45",
+    "subject": "MTK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 30,
+    "day": "Rabu",
+    "time": "08:45–09:30",
+    "subject": "KIK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 31,
+    "day": "Rabu",
+    "time": "09:30–09:50",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 32,
+    "day": "Rabu",
+    "time": "09:50–10:35",
+    "subject": "KIK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 33,
+    "day": "Rabu",
+    "time": "10:35–11:20",
+    "subject": "KIK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 34,
+    "day": "Rabu",
+    "time": "11:20–12:05",
+    "subject": "KIK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 35,
+    "day": "Rabu",
+    "time": "12:05–12:25",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 36,
+    "day": "Rabu",
+    "time": "12:25–13:05",
+    "subject": "KIK",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 37,
+    "day": "Rabu",
+    "time": "13:05–13:45",
+    "subject": "IND",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 38,
+    "day": "Rabu",
+    "time": "13:45–14:25",
+    "subject": "IND",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 39,
+    "day": "Rabu",
+    "time": "14:25–15:05",
+    "subject": "",
+    "teacher": "",
+    "type": "free"
+  },
+  {
+    "id": 40,
+    "day": "Kamis",
+    "time": "06:30–07:15",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 41,
+    "day": "Kamis",
+    "time": "07:15–08:00",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 42,
+    "day": "Kamis",
+    "time": "08:00–08:45",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 43,
+    "day": "Kamis",
+    "time": "08:45–09:30",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 44,
+    "day": "Kamis",
+    "time": "09:30–09:50",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 45,
+    "day": "Kamis",
+    "time": "09:50–10:35",
+    "subject": "ING",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 46,
+    "day": "Kamis",
+    "time": "10:35–11:20",
+    "subject": "ING",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 47,
+    "day": "Kamis",
+    "time": "11:20–12:05",
+    "subject": "ING",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 48,
+    "day": "Kamis",
+    "time": "12:05–12:25",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 49,
+    "day": "Kamis",
+    "time": "12:25–13:05",
+    "subject": "DKV",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 50,
+    "day": "Kamis",
+    "time": "13:05–13:45",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 51,
+    "day": "Kamis",
+    "time": "13:45–14:25",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 52,
+    "day": "Kamis",
+    "time": "14:25–15:05",
+    "subject": "",
+    "teacher": "",
+    "type": "free"
+  },
+  {
+    "id": 53,
+    "day": "Jumat",
+    "time": "06:30–07:15",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 54,
+    "day": "Jumat",
+    "time": "07:15–08:00",
+    "subject": "KRP",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 55,
+    "day": "Jumat",
+    "time": "08:00–08:45",
+    "subject": "DKV",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 56,
+    "day": "Jumat",
+    "time": "08:45–09:30",
+    "subject": "SI",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 57,
+    "day": "Jumat",
+    "time": "09:30–09:50",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 58,
+    "day": "Jumat",
+    "time": "09:50–10:35",
+    "subject": "SI",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 59,
+    "day": "Jumat",
+    "time": "10:35–11:20",
+    "subject": "KKA",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 60,
+    "day": "Jumat",
+    "time": "11:20–12:05",
+    "subject": "KKA",
+    "teacher": "",
+    "type": "lesson"
+  },
+  {
+    "id": 61,
+    "day": "Jumat",
+    "time": "12:05–12:25",
+    "subject": "Istirahat",
+    "teacher": "",
+    "type": "break"
+  },
+  {
+    "id": 62,
+    "day": "Jumat",
+    "time": "12:25–13:05",
+    "subject": "",
+    "teacher": "",
+    "type": "free"
+  },
+  {
+    "id": 63,
+    "day": "Jumat",
+    "time": "13:05–13:45",
+    "subject": "",
+    "teacher": "",
+    "type": "free"
+  },
+  {
+    "id": 64,
+    "day": "Jumat",
+    "time": "13:45–14:25",
+    "subject": "",
+    "teacher": "",
+    "type": "free"
+  },
+  {
+    "id": 65,
+    "day": "Jumat",
+    "time": "14:25–15:05",
+    "subject": "",
+    "teacher": "",
+    "type": "free"
+  }
+]
