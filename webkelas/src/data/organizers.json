@@ -1,0 +1,12 @@
+[
+  { "id": 1, "role": "Ketua Kelas", "studentId":1 },
+  { "id": 2, "role": "Wakil Ketua", "studentId": 31 },
+  { "id": 3, "role": "Sekretaris", "studentId": 6 },
+  { "id": 3, "role": "Sekretaris", "studentId": 3 },
+  { "id": 4, "role": "Bendahara", "studentId": 5 },
+  { "id": 5, "role": "Seksi Kebersihan", "studentId": null },
+  { "id": 6, "role": "Seksi Kerohanian", "studentId": null },
+  { "id": 7, "role": "Seksi Keamanan", "studentId": null },
+  { "id": 8, "role": "Seksi Olahraga", "studentId": null },
+  { "id": 9, "role": "Seksi Keagamaan", "studentId": null }
+]
