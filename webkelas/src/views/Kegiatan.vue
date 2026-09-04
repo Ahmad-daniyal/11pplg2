@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useStore } from '../core/store.js'
 import Page from '../components/Page.vue'
 import { resolveMedia, resolveVideo } from '../utils/media.js'
+import { openLightbox } from '../services/lightbox.js'
 
 const { state } = useStore()
 
@@ -32,7 +33,7 @@ function formatDate(d) {
         class="card activity-card"
         :class="[cardStyles[i % cardStyles.length], i % 2 ? 'rot-r' : 'rot-l']"
       >
-        <div class="photo-slot">
+        <div class="photo-slot slot-clickable" @click="!a.video && a.photo && openLightbox(resolveMedia(a.photo, 'kegiatan'), a.title)">
           <video v-if="a.video" :src="resolveVideo(a.video)" controls></video>
           <img v-else-if="a.photo" :src="resolveMedia(a.photo, 'kegiatan')" :alt="a.title" />
           <span v-else class="photo-hint">Foto</span>

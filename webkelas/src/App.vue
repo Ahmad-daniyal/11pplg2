@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import Sidebar from './components/layout/Sidebar.vue'
 import BottomNav from './components/layout/BottomNav.vue'
 import SearchOverlay from './components/ui/SearchOverlay.vue'
+import Lightbox from './components/ui/Lightbox.vue'
 import Toast from './components/ui/Toast.vue'
 import { ui, openSearch } from './services/ui.js'
 import { theme, useSettings } from './services/settings.js'
@@ -42,6 +43,7 @@ const pageTitle = computed(() => route.meta.title || 'Dashboard')
     </main>
 
     <SearchOverlay v-if="ui.searchOpen" />
+    <Lightbox />
     <BottomNav />
     <Toast />
   </div>
