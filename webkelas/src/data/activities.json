@@ -1,5 +1,7 @@
 [
-  { "id": 1, "title": "latihan teater", "date": "", "category": "Tgas praktek", "description": "jadi kita lagi latihan buat teater tanggal 31 agustus nanti, jangan lupa nonton ya", "photo": "", "video": "IMG_3406.MOV" },
+  { "id": 1, "title": "latihan teater", "date": "", "category": "Tgas praktek", "description": "jadi kita lagi latihan buat teater tanggal 31 agustus nanti, jangan lupa nonton ya", "photo": ""},
   { "id": 2, "title": "latihan teater", "date": "", "category": "Tugas praktek", "description": "", "photo": "teater1.jpeg", "video": "" },
   { "id": 3, "title": "ini nih para pemeran nya nih", "date": "", "category": "tugas praktek", "description": "", "photo": "teater2.jpeg", "video": "" }
+  { "id": 4, "title": "penampilan teater", "date": "", "category": "tugas praktek", "description": "jadi ini penampilan kita kemarin temen temen", "photo": "", "video": "" }
+  { "id": 5, "title": "after the show", "date": "", "category": "tugas praktek", "description": "jadi ini kita sesudah penampilan foto foto buat kenang kenangan", "photo": "", "video": "" }
 ]
