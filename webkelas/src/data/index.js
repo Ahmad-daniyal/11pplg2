@@ -25,7 +25,12 @@ function mergeStored() {
   return {
     ...seed(),
     ...stored,
-    students: Array.isArray(stored.students) ? stored.students : seed().students,
+    students: Array.isArray(stored.students)
+      ? stored.students.map((st) => ({
+          ...(seed().students.find((x) => x.id === st.id) || {}),
+          ...st,
+        }))
+      : seed().students,
     organizers: Array.isArray(stored.organizers) ? stored.organizers : seed().organizers,
     schedule: Array.isArray(stored.schedule) ? stored.schedule : seed().schedule,
     activities: Array.isArray(stored.activities) ? stored.activities : seed().activities,

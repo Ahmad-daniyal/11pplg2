@@ -65,7 +65,7 @@
   border: var(--border-w) solid var(--ink);
   box-shadow: 10px 10px 0 var(--ink);
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   text-align: center;
   padding: 1.5rem;
   position: relative;
@@ -113,4 +113,67 @@
 
 .profile-gender .badge {
   font-size: 0.7rem;
+}
+
+.profile-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.profile-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border: 2px solid var(--ink);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 2px 2px 0 var(--ink);
+  transition: transform 0.05s, box-shadow 0.05s;
+}
+
+.profile-social-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.profile-social-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.profile-social-btn svg {
+  flex-shrink: 0;
+}
+
+.profile-detail {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--ink);
+  border-top: 2px solid var(--ink);
+  padding-top: 0.8rem;
+}
+
+.profile-detail-label {
+  display: block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+
+.profile-quote {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--muted);
 }
