@@ -4,6 +4,7 @@ import { useStore } from '../../data/index.js'
 import Page from '../../components/ui/Page.vue'
 import { resolveMedia } from '../../utils/media.js'
 import { openLightbox } from '../../services/lightbox.js'
+import { CONFIG } from '../../core/config.js'
 
 const { state } = useStore()
 
@@ -76,6 +77,18 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
 
 const profilePhoto = computed(() =>
   selected.value?.photo ? resolveMedia(selected.value.photo, 'siswa') : '',
+)
+
+const profileTint = computed(() => tintFor(selected.value?.id || 0))
+
+const studentIndex = computed(() =>
+  String(
+    (state.students.findIndex((s) => s.id === selected.value?.id) + 1 || 0),
+  ).padStart(2, '0'),
+)
+
+const orgRole = computed(() =>
+  state.organizers.find((o) => o.studentId === selected.value?.id)?.role || '',
 )
 </script>
 
@@ -155,49 +168,75 @@ const profilePhoto = computed(() =>
       <div v-if="selected" class="profile-modal" @click.self="closeStudent">
         <div class="profile-card">
           <button class="lightbox-close" aria-label="Tutup" @click="closeStudent">×</button>
-          <span v-if="profilePhoto" class="profile-photo" @click="openLightbox(profilePhoto, selected.name)">
-            <img :src="profilePhoto" :alt="selected.name" />
-          </span>
-          <span v-else class="profile-photo" :style="{ background: colorFor(selected.id) }">
-            {{ initials(selected.name) }}
-          </span>
-          <div class="profile-name">{{ selected.name }}</div>
-          <div class="profile-gender">
-            <span class="badge badge-ink">{{ genderLabel(selected.gender) }}</span>
+
+          <span class="profile-corner profile-corner-tl bg-yellow rot-l"></span>
+          <span class="profile-corner profile-corner-br bg-red rot-r"></span>
+
+          <div class="profile-media" :class="profileTint">
+            <span v-if="profilePhoto" class="profile-photo" @click="openLightbox(profilePhoto, selected.name)">
+              <img :src="profilePhoto" :alt="selected.name" />
+            </span>
+            <span v-else class="profile-photo" :style="{ background: colorFor(selected.id) }">
+              {{ initials(selected.name) }}
+            </span>
+            <span class="profile-index bg-yellow rot-r">{{ studentIndex }}</span>
+            <span class="profile-tag bg-ink rot-l">{{ orgRole || 'Siswa' }}</span>
           </div>
-          <div class="profile-social">
-            <a
-              v-if="socialUrl(selected.instagram, 'instagram')"
-              :href="socialUrl(selected.instagram, 'instagram')"
-              target="_blank"
-              rel="noopener"
-              class="profile-social-btn"
-              @click.stop
-            >
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-              <span>{{ selected.instagram.replace(/^@/, '') }}</span>
-            </a>
-            <a
-              v-if="socialUrl(selected.tiktok, 'tiktok')"
-              :href="socialUrl(selected.tiktok, 'tiktok')"
-              target="_blank"
-              rel="noopener"
-              class="profile-social-btn"
-              @click.stop
-            >
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-              </svg>
-              <span>{{ selected.tiktok.replace(/^@/, '') }}</span>
-            </a>
+
+          <div class="profile-main">
+            <div class="profile-chips">
+              <span class="badge badge-ink">{{ genderLabel(selected.gender) }}</span>
+              <span v-if="orgRole" class="badge badge-yellow rot-l">{{ orgRole }}</span>
+              <span class="badge badge-outline">{{ CONFIG.APP_NAME }}</span>
+            </div>
+
+            <h2 class="profile-name">{{ selected.name }}</h2>
+
+            <div v-if="selected.hobby || selected.quote" class="profile-info-grid">
+              <div v-if="selected.hobby" class="profile-info-cell">
+                <span class="profile-detail-label">Hobi</span>
+                <span>{{ selected.hobby }}</span>
+              </div>
+              <div v-if="selected.quote" class="profile-info-cell">
+                <span class="profile-detail-label">Motto</span>
+                <span class="profile-quote">“{{ selected.quote }}”</span>
+              </div>
+            </div>
+
+            <div class="profile-social">
+              <a
+                v-if="socialUrl(selected.instagram, 'instagram')"
+                :href="socialUrl(selected.instagram, 'instagram')"
+                target="_blank"
+                rel="noopener"
+                class="profile-social-btn"
+                @click.stop
+              >
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span>{{ selected.instagram.replace(/^@/, '') }}</span>
+              </a>
+              <a
+                v-if="socialUrl(selected.tiktok, 'tiktok')"
+                :href="socialUrl(selected.tiktok, 'tiktok')"
+                target="_blank"
+                rel="noopener"
+                class="profile-social-btn"
+                @click.stop
+              >
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+                <span>{{ selected.tiktok.replace(/^@/, '') }}</span>
+              </a>
+            </div>
+
+            <div class="profile-footer">
+              <span>{{ CONFIG.SCHOOL }}</span>
+              <span class="profile-footer-mark bg-yellow">{{ studentIndex }}</span>
+            </div>
           </div>
-          <div v-if="selected.hobby" class="profile-detail">
-            <span class="profile-detail-label">Hobi</span>
-            {{ selected.hobby }}
-          </div>
-          <div v-if="selected.quote" class="profile-quote">“{{ selected.quote }}”</div>
         </div>
       </div>
     </Teleport>
