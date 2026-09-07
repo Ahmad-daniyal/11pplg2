@@ -1,8 +1,8 @@
 <script setup>
 import { computed } from 'vue'
-import { useStore } from '../core/store.js'
-import { CONFIG } from '../config.js'
-import Page from '../components/Page.vue'
+import { useStore } from '../../data/index.js'
+import { CONFIG } from '../../core/config.js'
+import Page from '../../components/ui/Page.vue'
 
 const { state, days } = useStore()
 

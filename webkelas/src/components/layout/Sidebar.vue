@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import { CONFIG } from '../../config'
-import { useStore } from '../../core/store'
+import { CONFIG } from '../../core/config'
+import { useStore } from '../../data'
 
 const { state, days } = useStore()
 

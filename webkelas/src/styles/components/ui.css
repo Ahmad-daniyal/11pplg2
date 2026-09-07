@@ -1,0 +1,508 @@
+/* ---------- Page header (components/ui/Page.vue) ---------- */
+.page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.page-title {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  background: var(--yellow);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+  padding: 0.25rem 0.9rem;
+  transform: rotate(-1deg);
+  color: var(--ink-solid);
+}
+
+.page-desc {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: 0.7rem;
+  font-weight: 500;
+}
+
+.page-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: var(--surface);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border: var(--border-w) solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Button ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: var(--border-w) solid var(--ink);
+  border-radius: 0;
+  padding: 0.55rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.05s, box-shadow 0.05s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.btn-primary:hover {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.btn-red {
+  background: var(--red);
+  color: #ffffff;
+}
+
+.btn-yellow {
+  background: var(--yellow);
+  color: var(--ink-solid);
+}
+
+.btn-ghost {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.btn-sm {
+  padding: 0.28rem 0.6rem;
+  font-size: 0.7rem;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.btn-sm:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+/* ---------- Badge ---------- */
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border: 2px solid var(--ink);
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.badge-red {
+  background: var(--red);
+  color: #ffffff;
+}
+
+.badge-yellow {
+  background: var(--yellow);
+  color: var(--ink-solid);
+}
+
+.badge-ink {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+/* ---------- Form ---------- */
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ---------- Avatar ---------- */
+.avatar {
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #ffffff;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+/* ---------- Empty ---------- */
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* ---------- Photo slots (Foto/video preview) ---------- */
+.photo-slot {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 3px dashed var(--ink);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.photo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-slot video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #000;
+}
+
+.photo-hint {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.photo-thumb {
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.photo-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-thumb-empty {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ---------- Toast (components/ui/Toast.vue) ---------- */
+.toast-wrap {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  z-index: 100;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  background: var(--surface);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  max-width: 320px;
+  animation: toast-in 0.18s ease;
+}
+
+.toast-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--ink);
+  flex-shrink: 0;
+}
+
+.toast-success .toast-dot {
+  background: var(--yellow);
+}
+
+.toast-warn .toast-dot {
+  background: var(--red);
+}
+
+.toast-info .toast-dot {
+  background: var(--ink);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Search overlay (components/ui/SearchOverlay.vue) ---------- */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.55);
+  z-index: 60;
+  padding: 5rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.search-panel {
+  background: var(--surface);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: 10px 10px 0 var(--ink);
+  width: 100%;
+  max-width: 560px;
+  overflow: hidden;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  border-bottom: var(--border-w) solid var(--ink);
+  background: var(--yellow);
+}
+
+.search-input-wrap input {
+  flex: 1;
+  border: none;
+  padding: 0.3rem 0;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.search-input-wrap input:focus {
+  box-shadow: none;
+}
+
+.search-results {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 1.1rem;
+  border: none;
+  border-bottom: 2px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.search-item:hover {
+  background: var(--yellow-soft);
+}
+
+.search-item-title {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.search-item-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.search-kbd {
+  font-size: 0.7rem;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 0.1rem 0.4rem;
+  font-weight: 700;
+}
+
+/* ---------- Lightbox (components/ui/Lightbox.vue) ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.lightbox-panel {
+  position: relative;
+  max-width: 92vw;
+  max-height: 92vh;
+}
+
+.lightbox-panel img {
+  display: block;
+  max-width: 100%;
+  max-height: 92vh;
+  object-fit: contain;
+  border: var(--border-w) solid var(--ink);
+  background: var(--bg);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  background: var(--yellow);
+  color: var(--ink-solid);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink);
+  cursor: pointer;
+}
+
+/* ---------- Clickable images ---------- */
+.slot-clickable {
+  cursor: zoom-in;
+}
+
+.avatar.has-photo {
+  overflow: hidden;
+}
+
+.avatar.has-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Activity / highlight card (bersama) ---------- */
+.activity-card,
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.activity-top,
+.highlight-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.activity-title,
+.highlight-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.activity-actions,
+.highlight-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}

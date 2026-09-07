@@ -1,11 +1,11 @@
 import { reactive, watch } from 'vue'
-import { CONFIG } from '../config'
+import { CONFIG } from '../core/config'
 import { storage } from '../utils/storage'
-import students from '../data/students.json'
-import schedule from '../data/schedule.json'
-import activities from '../data/activities.json'
-import highlights from '../data/highlights.json'
-import organizers from '../data/organizers.json'
+import students from './students.json'
+import schedule from './schedule.json'
+import activities from './activities.json'
+import highlights from './highlights.json'
+import organizers from './organizers.json'
 
 const DAYS = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat']
 

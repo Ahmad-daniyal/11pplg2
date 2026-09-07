@@ -1,0 +1,91 @@
+/* ---------- Sticker colors ---------- */
+.bg-yellow {
+  background: var(--yellow);
+  color: var(--ink-solid);
+}
+
+.bg-red {
+  background: var(--red);
+  color: #ffffff;
+}
+
+.bg-ink {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.bg-white {
+  background: var(--sticker);
+  color: var(--ink-solid);
+}
+
+.rot-l {
+  transform: rotate(-1.2deg);
+}
+
+.rot-r {
+  transform: rotate(1.2deg);
+}
+
+/* ---------- Grid ---------- */
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.grid > * {
+  min-width: 0;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid-sched {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* ---------- Misc ---------- */
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.8rem;
+}

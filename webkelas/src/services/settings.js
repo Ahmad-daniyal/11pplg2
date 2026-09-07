@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
-import { CONFIG } from '../config'
+import { CONFIG } from '../core/config'
 import { storage } from '../utils/storage'
 
 export const theme = reactive({ dark: false })

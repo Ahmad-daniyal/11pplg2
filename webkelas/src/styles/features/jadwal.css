@@ -1,0 +1,47 @@
+/* ---------- Table (features/jadwal) ---------- */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  border: var(--border-w) solid var(--ink);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--ink);
+}
+
+th {
+  background: var(--ink);
+  color: var(--surface);
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+tbody tr {
+  transition: background 0.1s;
+}
+
+tbody tr:hover td {
+  background: var(--yellow-soft);
+}
+
+/* ---------- Schedule rows (features/jadwal) ---------- */
+.row-break td {
+  background: var(--yellow-soft);
+}
+
+.row-free td {
+  color: var(--muted);
+}

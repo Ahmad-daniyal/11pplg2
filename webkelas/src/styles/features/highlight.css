@@ -1,0 +1,28 @@
+/* ---------- Highlight cards (features/highlight) ---------- */
+.highlight-card {
+  box-shadow: var(--shadow);
+}
+
+.highlight-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.highlight-quote {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.highlight-num {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  border: var(--border-w) solid var(--ink);
+  background: var(--surface);
+  color: var(--ink);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0 var(--ink);
+}

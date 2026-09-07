@@ -1,9 +1,9 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useStore } from '../../core/store'
+import { useStore } from '../../data'
 import { closeSearch } from '../../services/ui'
-import { CONFIG } from '../../config'
+import { CONFIG } from '../../core/config'
 
 const { state } = useStore()
 const router = useRouter()

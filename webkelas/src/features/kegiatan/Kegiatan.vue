@@ -1,9 +1,9 @@
 <script setup>
 import { computed } from 'vue'
-import { useStore } from '../core/store.js'
-import Page from '../components/Page.vue'
-import { resolveMedia, resolveVideo } from '../utils/media.js'
-import { openLightbox } from '../services/lightbox.js'
+import { useStore } from '../../data/index.js'
+import Page from '../../components/ui/Page.vue'
+import { resolveMedia, resolveVideo } from '../../utils/media.js'
+import { openLightbox } from '../../services/lightbox.js'
 
 const { state } = useStore()
 
