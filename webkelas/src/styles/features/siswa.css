@@ -19,7 +19,7 @@
 
 .org-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 var(--ink);
+  box-shadow: 5px 5px 0 var(--shadow-k);
 }
 
 .org-role {
@@ -48,6 +48,50 @@
   cursor: zoom-in;
 }
 
+.student-name-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+}
+
+.student-profil-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  border: 2px solid var(--ink);
+  border-radius: 0;
+  background: var(--yellow);
+  color: var(--ink-solid);
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 2px 2px 0 var(--shadow-k);
+  animation: profil-wiggle 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+  vertical-align: middle;
+  line-height: 1;
+  transform-origin: center;
+}
+
+.student-profil-label {
+  line-height: 1;
+}
+
+.student-profil-hint svg {
+  flex-shrink: 0;
+}
+
+@keyframes profil-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  88% { transform: rotate(0deg); }
+  92% { transform: rotate(-8deg); }
+  96% { transform: rotate(8deg); }
+  98% { transform: rotate(-4deg); }
+}
+
 /* ---------- Student profile modal (features/siswa) ---------- */
 .profile-modal {
   position: fixed;
@@ -65,7 +109,7 @@
 .profile-card {
   background: var(--surface);
   border: var(--border-w) solid var(--ink);
-  box-shadow: 10px 10px 0 var(--ink);
+  box-shadow: 10px 10px 0 var(--shadow-k);
   width: 100%;
   max-width: 560px;
   display: grid;
@@ -85,7 +129,7 @@
   width: 26px;
   height: 26px;
   border: var(--border-w) solid var(--ink);
-  box-shadow: 2px 2px 0 var(--ink);
+  box-shadow: 2px 2px 0 var(--shadow-k);
   z-index: 2;
   pointer-events: none;
 }
@@ -244,13 +288,13 @@
   font-size: 0.72rem;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 2px 2px 0 var(--ink);
+  box-shadow: 2px 2px 0 var(--shadow-k);
   transition: transform 0.05s, box-shadow 0.05s;
 }
 
 .profile-social-btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0 var(--ink);
+  box-shadow: 4px 4px 0 var(--shadow-k);
 }
 
 .profile-social-btn:active {
@@ -285,7 +329,7 @@
   align-items: center;
   justify-content: center;
   border: 2px solid var(--ink);
-  box-shadow: 2px 2px 0 var(--ink);
+  box-shadow: 2px 2px 0 var(--shadow-k);
   font-family: var(--font-display);
   font-size: 0.7rem;
   color: var(--ink-solid);

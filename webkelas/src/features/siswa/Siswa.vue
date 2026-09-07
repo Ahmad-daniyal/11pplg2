@@ -153,7 +153,17 @@ const orgRole = computed(() =>
                 </span>
                 <span v-else class="photo-thumb photo-thumb-empty">{{ initials(s.name) }}</span>
               </td>
-              <td>{{ s.name || '—' }}</td>
+              <td>
+                <span class="student-name-cell">
+                  {{ s.name || '—' }}
+                  <span class="student-profil-hint">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="4"/><path d="M4 21v-1a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v1"/>
+                    </svg>
+                    <span class="student-profil-label">profil</span>
+                  </span>
+                </span>
+              </td>
               <td>{{ s.gender }}</td>
             </tr>
             <tr v-if="!state.students.length">

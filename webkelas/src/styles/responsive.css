@@ -161,7 +161,7 @@
 
   .page-title {
     font-size: 1.1rem;
-    box-shadow: 3px 3px 0 var(--ink);
+    box-shadow: 3px 3px 0 var(--shadow-k);
     padding: 0.2rem 0.6rem;
   }
 
@@ -209,6 +209,12 @@
   td {
     padding: 0.4rem 0.45rem;
     font-size: 0.75rem;
+  }
+
+  .student-profil-hint {
+    font-size: 0.5rem;
+    padding: 0.1rem 0.35rem;
+    gap: 0.18rem;
   }
 
   .org-grid {

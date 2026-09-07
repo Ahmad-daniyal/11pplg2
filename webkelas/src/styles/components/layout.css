@@ -27,7 +27,7 @@
   background: var(--yellow);
   overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 3px 3px 0 var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow-k);
   transform: rotate(-3deg);
 }
 
@@ -86,14 +86,14 @@
   background: var(--bg);
   border-color: var(--ink);
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow-k);
 }
 
 .nav-item.active {
   background: var(--yellow);
   color: var(--ink-solid);
   border-color: var(--ink);
-  box-shadow: 3px 3px 0 var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow-k);
   transform: translate(-1px, -1px);
 }
 
@@ -172,7 +172,7 @@
 
 .icon-btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0 var(--ink);
+  box-shadow: 4px 4px 0 var(--shadow-k);
 }
 
 .icon-btn:active {

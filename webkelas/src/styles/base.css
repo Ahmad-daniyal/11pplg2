@@ -12,6 +12,7 @@
   --border-w: 3px;
   --shadow: 6px 6px 0 #111111;
   --shadow-sm: 3px 3px 0 #111111;
+  --shadow-k: #111111;
   --font-display: 'Archivo Black', 'Space Grotesk', system-ui, sans-serif;
   --font-body: 'Space Grotesk', system-ui, -apple-system, sans-serif;
 }
@@ -19,16 +20,29 @@
 html.dark {
   --bg: #141414;
   --surface: #1e1e1e;
-  --ink: #f2f0e9;
-  --ink-solid: #111111;
-  --muted: #a8a49b;
-  --red: #ff5c5c;
-  --red-soft: #331516;
-  --yellow: #ffd166;
-  --yellow-soft: #33290f;
-  --sticker: #f0ede4;
-  --shadow: 6px 6px 0 #000000;
-  --shadow-sm: 3px 3px 0 #000000;
+  --ink: #e6e2da;
+  --ink-solid: #0f0f0f;
+  --muted: #948f87;
+  --red: #ff7a6d;
+  --red-soft: #2c201d;
+  --yellow: #f3c24b;
+  --yellow-soft: #2e2816;
+  --sticker: #2a2a2a;
+  --shadow: 6px 6px 0 #2c2c2c;
+  --shadow-sm: 3px 3px 0 #2c2c2c;
+  --shadow-k: #2c2c2c;
+}
+
+html.dark .bg-white {
+  color: var(--ink);
+}
+
+html.dark .bg-ink,
+html.dark .btn-primary,
+html.dark .badge-ink,
+html.dark th {
+  background: var(--sticker);
+  color: var(--ink);
 }
 
 * {
